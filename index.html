@@ -4,87 +4,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore enterprise AI solutions, AI application development and intelligent automation for businesses.">
-  <title>AI Agency | Enterprise AI Solutions</title>
+
+  <title>Hyena AI Services | Enterprise AI Application Development</title>
+
+  <meta name="description" content="Explore enterprise AI application development, AI integration and intelligent automation solutions from Hyena AI Services.">
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Hyena AI Services | Enterprise AI Solutions">
+  <meta property="og:description" content="Explore AI application development and enterprise AI solutions.">
+  <meta property="og:type" content="website">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
+      background: #090d22;
+      color: #fff;
       font-family: Arial, sans-serif;
-      background: #080d1b;
-      color: #ffffff;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 24px 8%;
-      border-bottom: 1px solid #263047;
+      padding: 22px 8%;
+      border-bottom: 1px solid #252b46;
     }
 
     .logo {
-      font-size: 26px;
+      font-size: 25px;
       font-weight: bold;
-      color: #b8ff36;
+      color: white;
     }
+
+    .logo span { color: #ff812b; }
 
     nav a {
-      color: white;
+      color: #ddd;
       text-decoration: none;
-      margin-left: 25px;
+      margin-left: 24px;
+      font-size: 14px;
     }
+
+    nav a:hover { color: #ff812b; }
 
     .hero {
-      min-height: 75vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 80px 8%;
-      background: radial-gradient(circle at 80% 40%, #192c50, #080d1b 60%);
+      padding: 110px 8%;
+      background: radial-gradient(circle at 85% 40%, #252b55, #090d22 60%);
     }
 
-    .hero h1 {
-      font-size: clamp(38px, 6vw, 68px);
+    .tag {
+      color: #ff812b;
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5.5vw, 66px);
+      line-height: 1.15;
       max-width: 850px;
-      line-height: 1.12;
-      margin: 20px 0;
+      margin: 22px 0;
     }
 
-    .hero h1 span {
-      color: #b8ff36;
-    }
+    h1 span { color: #ff812b; }
 
     .hero p {
-      color: #b5bfd1;
-      max-width: 650px;
+      color: #c1c6d8;
+      max-width: 680px;
       font-size: 18px;
       margin-bottom: 30px;
     }
 
-    .button {
+    .btn {
       display: inline-block;
-      width: fit-content;
-      background: #b8ff36;
-      color: #080d1b;
-      padding: 14px 26px;
-      border-radius: 5px;
+      padding: 13px 25px;
+      background: #ff812b;
+      color: #090d22;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 5px;
     }
 
-    section {
-      padding: 80px 8%;
-    }
+    .btn:hover { background: #ffa15e; }
+
+    section { padding: 80px 8%; }
 
     .section-title {
       font-size: 36px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+    }
+
+    .section-desc {
+      color: #b9bfd2;
+      max-width: 720px;
     }
 
     .cards {
@@ -95,121 +110,236 @@
     }
 
     .card {
-      background: #121b2e;
-      border: 1px solid #293650;
+      background: #151b35;
+      border: 1px solid #303653;
       padding: 28px;
       border-radius: 10px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      border-color: #ff812b;
+      transform: translateY(-5px);
     }
 
     .card h3 {
-      color: #b8ff36;
+      color: #ff994f;
       margin-bottom: 12px;
     }
 
-    .card p, .section-text {
-      color: #b5bfd1;
+    .card p { color: #bbc2d4; }
+
+    .industries { background: #10162d; }
+
+    .industry-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .industry-list span {
+      background: #202846;
+      border: 1px solid #353e5d;
+      padding: 10px 18px;
+      border-radius: 5px;
+    }
+
+    .about { background: #090d22; }
+
+    .contact {
+      text-align: center;
+      background: #151b35;
+    }
+
+    .contact p {
+      color: #bbc2d4;
+      margin: 15px auto 25px;
+      max-width: 650px;
     }
 
     footer {
-      padding: 30px 8%;
       text-align: center;
-      color: #aab3c5;
-      border-top: 1px solid #263047;
+      padding: 30px 8%;
+      border-top: 1px solid #303653;
+      color: #aeb5ca;
+      font-size: 13px;
     }
 
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 15px;
-      }
+    footer a {
+      color: #ff994f;
+      text-decoration: none;
+    }
 
-      nav a {
-        margin: 0 7px;
-        font-size: 13px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: 65vh;
-      }
+    @media(max-width: 768px) {
+      header { flex-direction: column; gap: 15px; }
+      nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+      nav a { margin: 0; }
+      .cards { grid-template-columns: 1fr; }
+      .hero { padding: 80px 7%; }
+      section { padding: 60px 7%; }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">AI Agency</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">Hyena<span>.ai</span> Services</div>
 
-  <main>
-    <section class="hero" id="home">
-      <p>ENTERPRISE ARTIFICIAL INTELLIGENCE</p>
-      <h1>Build Smarter Businesses with <span>AI Solutions.</span></h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#industries">Industries</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="tag">ENTERPRISE AI SOLUTIONS</div>
+
+  <h1>
+    Build Smarter Business Solutions with
+    <span>Artificial Intelligence.</span>
+  </h1>
+
+  <p>
+    Explore enterprise AI application development, intelligent
+    automation and AI integration solutions designed to address
+    complex business requirements.
+  </p>
+
+  <a class="btn"
+     href="https://www.hyena.ai/contact-us/">
+     Discuss Your AI Project
+  </a>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Our AI Services</h2>
+
+  <p class="section-desc">
+    Explore AI development capabilities for modern business
+    applications and enterprise operations.
+  </p>
+
+  <div class="cards">
+
+    <article class="card">
+      <h3>AI Application Development</h3>
       <p>
-        Develop intelligent applications, automate business
-        operations and create better digital experiences
-        with enterprise AI technology.
+        Develop intelligent applications that support business
+        workflows, customer experiences and enterprise requirements.
       </p>
-      <a href="#contact" class="button">Discuss Your AI Project</a>
-    </section>
+    </article>
 
-    <section id="services">
-      <h2 class="section-title">Our AI Services</h2>
-      <p class="section-text">
-        Technology solutions designed around your business needs.
+    <article class="card">
+      <h3>Generative AI Solutions</h3>
+      <p>
+        Build AI-powered applications, conversational assistants
+        and intelligent content solutions.
       </p>
+    </article>
 
-      <div class="cards">
-        <div class="card">
-          <h3>AI Application Development</h3>
-          <p>Build intelligent applications for business workflows and customer experiences.</p>
-        </div>
-
-        <div class="card">
-          <h3>Generative AI Solutions</h3>
-          <p>Develop AI-powered assistants and content solutions for enterprise operations.</p>
-        </div>
-
-        <div class="card">
-          <h3>AI Automation</h3>
-          <p>Automate repetitive processes and improve operational efficiency.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2 class="section-title">AI Built Around Your Business</h2>
-      <p class="section-text">
-        We help organizations identify opportunities for AI
-        adoption and develop solutions aligned with their
-        technology requirements and business objectives.
+    <article class="card">
+      <h3>AI Integration</h3>
+      <p>
+        Connect AI capabilities with existing business applications,
+        enterprise systems and digital platforms.
       </p>
-    </section>
+    </article>
 
-    <section id="contact">
-      <h2 class="section-title">Have an AI Project in Mind?</h2>
-      <p class="section-text">
-        Let's discuss your business requirements.
+    <article class="card">
+      <h3>AI Automation</h3>
+      <p>
+        Improve business workflows by automating repetitive
+        tasks and supporting operational decisions.
       </p>
-      <a href="mailto:hello@example.com" class="button">
-        Contact Our Team
-      </a>
-    </section>
-  </main>
+    </article>
 
-  <footer>
-    © 2026 AI Agency. All Rights Reserved.
-  </footer>
+    <article class="card">
+      <h3>Mobile App Development</h3>
+      <p>
+        Develop Android, iOS and cross-platform applications
+        with intelligent features.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Enterprise AI Consulting</h3>
+      <p>
+        Identify AI opportunities and plan application
+        development around business objectives.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section class="industries" id="industries">
+  <h2 class="section-title">Industries We Serve</h2>
+
+  <p class="section-desc">
+    Explore AI application opportunities across different
+    business sectors.
+  </p>
+
+  <div class="industry-list">
+    <span>Healthcare</span>
+    <span>Pharmaceuticals</span>
+    <span>Manufacturing</span>
+    <span>Banking & Finance</span>
+    <span>Supply Chain</span>
+    <span>Logistics</span>
+    <span>Education</span>
+    <span>Retail</span>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About Hyena AI Services</h2>
+
+  <p class="section-desc">
+    Hyena AI Services explores enterprise AI capabilities,
+    application development approaches and intelligent
+    technology solutions for businesses. Discover how AI
+    can support your organization's technology objectives.
+  </p>
+
+  <br>
+
+  <a class="btn" href="https://www.hyena.ai/about-us/">
+    Explore Hyena.ai
+  </a>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">
+    Have an AI Project in Mind?
+  </h2>
+
+  <p>
+    Explore AI application development opportunities and
+    discuss your enterprise technology requirements.
+  </p>
+
+  <a class="btn" href="https://www.hyena.ai/contact-us/">
+    Contact Hyena.ai
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>Hyena AI Services | Enterprise AI Solutions</p>
+  <p>
+    <a href="https://www.hyena.ai/">Visit Official Hyena.ai Website</a>
+  </p>
+  <p>© 2026 Hyena AI Services. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
